@@ -1,0 +1,16 @@
+{{ form_start(form) }}
+<div class="row">
+
+
+
+
+
+<div class="form-group">
+	{{ form_label(form.etatDemande, 'État de la demande') }}
+	{{ form_widget(form.etatDemande, {'attr': {'class': 'form-control'}}) }}
+</div>
+</div>
+	
+
+<button type="submit" class="btn btn-primary">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}

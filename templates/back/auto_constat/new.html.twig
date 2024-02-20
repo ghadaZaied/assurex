@@ -1,0 +1,20 @@
+{% extends 'back/base_back.html.twig' %}
+
+{% block title %}New Constat{% endblock %}
+
+{% block body %}
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">Create new Constat </h1>
+
+    <div class="row">
+
+
+    {{ include('front/auto_constat/_form.html.twig') }}
+
+    <a href="{{ path('app_auto_constat_index') }}">back to list</a>
+
+    </div>
+</section>
+{% endblock %}

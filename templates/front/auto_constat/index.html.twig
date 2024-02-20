@@ -1,0 +1,47 @@
+{% extends 'front/base_front.html.twig' %}
+
+{% block title %}Constat index{% endblock %}
+
+{% block body %}
+<section class="contact" id="contact" style="margin-top: 10rem; min-height: 450px">
+    <h1>Constat index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Date_incident</th>
+                <th>Heure_incident</th>
+                <th>Description</th>
+                <th>Cordonnées_des_conducteurs</th>
+                <th>Images_de_deux_véhicules_accidentées</th>
+                <th>Témoins</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for constat in constats %}
+            <tr>
+                <td>{{ constat.id }}</td>
+                <td>{{ constat.dateIncident ? constat.dateIncident|date('Y-m-d') : '' }}</td>
+                <td>{{ constat.heureIncident ? constat.heureIncident|date('Y-m-d') : '' }}</td>
+                <td>{{ constat.description }}</td>
+                <td>{{ constat.cordonneesDesConducteurs }}</td>
+                <td>{{ constat.imagesDeDeuxVehiculesAccidentees }}</td>
+                <td>{{ constat.temoins }}</td>
+                <td>
+                    <a href="{{ path('showconstat', {'id': constat.id}) }}">show</a>
+                    <a href="{{ path('editconstat', {'id': constat.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('add_constat') }}">Create new</a>
+</section>
+{% endblock %}

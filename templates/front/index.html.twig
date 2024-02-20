@@ -1,0 +1,237 @@
+{% extends 'front/base_front.html.twig' %}
+
+{% block body %}
+    <section class="home" id="home">
+
+        <h3 data-speed="-2" class="home-parallax">Find your car Insurance </h3>
+
+        <img data-speed="5" class="home-parallax" src="{{ asset('front/image/home-img.png') }}" alt="">
+
+        <a data-speed="7" href="#" class="btn home-parallax">Get A Quote</a>
+
+    </section>
+
+    <section class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-home"></i>
+            <div class="content">
+                <h3>150+</h3>
+                <p>Insurance Companies</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>4770+</h3>
+                <p>Cars Insurance sold</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <div class="content">
+                <h3>320+</h3>
+                <p>Happy clients</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>1500+</h3>
+                <p>New Vehicles Insurance</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+
+        <h1 class="heading"> our <span>services</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-car-crash"></i>
+                <h3>Car Insurance</h3>
+                <p>In the event of a car accident</p>
+                <a href="{{ path('add_constat') }}" class="btn"> read more</a>
+            </div>
+
+        
+
+          
+
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 support</h3>
+                <p>get help and find answers to questions as soon as they come up—24/7 and in real-time.</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+
+        <h1 class="heading"> Motor Vehicle <span> Insurance </span> </h1>
+
+        <div class="box-container">
+
+    
+
+            <div class="box">
+                <i class="fas fa-motorcycle"></i>
+                <h3>Motor Insurance</h3>
+                <p>Get our Motor Cycle Third Party Liability Insurance (as it is required by Law) to Protect you in case of Accident to Third Party Property and Bodily Injury.</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+
+        
+
+    </section>
+
+
+    <section class="newsletter">
+
+        <h3>Subscribe for latest updates</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, suscipit.</p>
+
+        <form action="">
+            <input type="email" placeholder="enter your email">
+            <input type="submit" value="subscribe">
+        </form>
+
+    </section>
+
+    <section class="reviews" id="reviews">
+
+        <h1 class="heading"> client's <span>review</span> </h1>
+
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="{{ asset('front/image/pic-1.png') }}" alt="">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                        <h3>John Oliver</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="{{ asset('front/image/pic-2.png') }}" alt="">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                        <h3>Sarah Connor</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="{{ asset('front/image/pic-3.png') }}" alt="">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                        <h3>David Thompson</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="{{ asset('front/image/pic-4.png') }}" alt="">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                        <h3>Ashley Johnson</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="{{ asset('front/image/pic-5.png') }}" alt="">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                        <h3>Ritin Kumaar</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="{{ asset('front/image/pic-6.png') }}" alt="">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam incidunt quod praesentium iusto id autem possimus assumenda at ut saepe.</p>
+                        <h3>Park Jin Min</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"><span>Contact</span> us</h1>
+
+        <div class="row">
+
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=sharahe faisal&amp;t=h&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.fnfgo.com/">FNF Online</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
+            <form action="">
+                <h3>Get in touch</h3>
+                <input type="text" placeholder="your name" class="box">
+                <input type="email" placeholder="your email" class="box">
+                <input type="tel" placeholder="subject" class="box">
+                <textarea placeholder="your message" class="box" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+
+        </div>
+
+    </section>
+
+{% endblock %}

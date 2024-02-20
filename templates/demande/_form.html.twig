@@ -1,0 +1,40 @@
+{{ form_start(form,{attr:{novalidate:'novalidate'}}) }}
+<div class="row">
+	<div class="col-md-6">
+		<div class="form-group">
+			{{ form_label(form.nomVictime, 'Nom de la victime') }}
+			{{ form_widget(form.nomVictime, {'attr': {'class': 'form-control'}}) }}
+			{{  form_errors(form.nomVictime,{'attr':{'class':'text-danger'}}) }}
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="form-group">
+			{{ form_label(form.numConstat, 'Numéro de constat') }}
+			{{ form_widget(form.numConstat, {'attr': {'class': 'form-control'}}) }}
+			{{  form_errors(form.numConstat,{'attr':{'class':'text-danger'}}) }}
+
+		</div>
+	</div>
+</div>
+
+<div class="form-group">
+	{{ form_label(form.dateRealisation, 'Date de réalisation') }}
+	{{ form_widget(form.dateRealisation, {'attr': {'class': 'form-control'}}) }}
+
+</div>
+
+<div class="form-group">
+	{{ form_label(form.localisation, 'Localisation') }}
+	{{ form_widget(form.localisation, {'attr': {'class': 'form-control'}}) }}
+	{{  form_errors(form.localisation,{'attr':{'class':'text-danger'}}) }}
+
+</div>
+
+
+<div class="form-group">
+	{{ form_label(form.user, 'Utilisateur') }}
+	{{ form_widget(form.user, {'attr': {'class': 'form-control'}}) }}
+</div>
+
+<button type="submit" class="btn btn-primary">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}

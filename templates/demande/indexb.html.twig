@@ -1,0 +1,42 @@
+{% extends './back/base_back.html.twig' %}
+
+{% block title %}Demande index{% endblock %}
+
+{% block body %}
+    <h1>Demande index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>NomVictime</th>
+                <th>NumConstat</th>
+                <th>DateRealisation</th>
+                <th>Localisation</th>
+                <th>EtatDemande</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for demande in demandes %}
+            <tr>
+                <td>{{ demande.id }}</td>
+                <td>{{ demande.nomVictime }}</td>
+                <td>{{ demande.numConstat }}</td>
+                <td>{{ demande.dateRealisation ? demande.dateRealisation|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ demande.localisation }}</td>
+                <td>{{ demande.etatDemande }}</td>
+                <td>
+                    <a href="{{ path('app_demande_showb', {'id': demande.id}) }}">show</a>
+                    <a href="{{ path('app_demande_editb', {'id': demande.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
